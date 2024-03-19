@@ -10,8 +10,16 @@ function calculate(operation) {
         case '-':
             result = Number(num1) - Number(num2);
             break;
-
-
+        case '*':
+            result = Number(num1) * Number(num2);
+            break;
+        case '/':
+            if (num2 != 0) {
+                    result = Number(num1) / Number(num2);
+            } else {
+                    result = "Erro: Divisão por zero não é permitida";
+            }
+            break;
     }
 
     document.getElementById('result').innerHTML = 'Resultado: ' + result;
