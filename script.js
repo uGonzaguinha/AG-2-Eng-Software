@@ -11,6 +11,7 @@ function calculate(operation) {
             result = Number(num1) - Number(num2);
             break;
 
+
     }
 
     document.getElementById('result').innerHTML = 'Resultado: ' + result;
