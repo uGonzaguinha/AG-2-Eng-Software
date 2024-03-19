@@ -11,6 +11,17 @@ function calculate(operation) {
             result = Number(num1) - Number(num2);
             break;
 
+        case '/':
+            if (num2 != 0) {
+                result = Number(num1) / Number(num2);
+            } else {
+                result = "Erro: Divisão por zero não é permitida";
+            }
+            break;
+        
+        case '*':
+            result = Number(num1) * Number(num2);
+            break;
 
     }
 
