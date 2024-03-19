@@ -4,6 +4,12 @@ function calculate(operation) {
     var result;
 
     switch(operation) {
+        case '+':
+            result = Number(num1) + Number(num2);
+            break;
+        case '-':
+            result = Number(num1) - Number(num2);
+            break;
 
     }
 
