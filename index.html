@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora Web</title>
+    <style>
+        .calculator {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .input {
+            width: 200px;
+            height: 30px;
+            margin: 5px;
+        }
+        .button {
+            width: 210px;
+            height: 30px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="number" id="num1" class="input">
+        <input type="number" id="num2" class="input">
+        <button onclick="calculate('+')" class="button">Adição</button>
+        <button onclick="calculate('-')" class="button">Subtração</button>
+        <button onclick="calculate('*')" class="button">Multiplicação</button>
+        <button onclick="calculate('/')" class="button">Divisão</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
