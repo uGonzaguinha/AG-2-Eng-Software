@@ -7,6 +7,10 @@ function calculate(operation) {
         case '+':
             result = Number(num1) + Number(num2);
             break;
+        case '-':
+            result = Number(num1) - Number(num2);
+            break;
+
 
     }
 
